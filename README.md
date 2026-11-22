@@ -97,23 +97,9 @@ Es una aplicación web que corre FaceNet **dentro del navegador** con TensorFlow
 - **Registrar a alguien:** agrega una persona nueva con el último rostro detectado.
 - **Ajustes:** cambia el umbral de distancia.
 
-**Cómo abrirlo.** Por seguridad, el navegador solo permite la cámara en `https` o en `localhost`, así que no basta con dar doble clic al archivo:
-```bash
-cd app_web
-python -m http.server 8000
-```
-Después abre **http://localhost:8000** en Chrome o Edge. Se necesita internet para cargar TensorFlow.js y OpenCV.js.
-
-**En línea (opcional):** GitHub Pages solo publica desde la raíz del repositorio o desde una carpeta `docs`. Para publicar la app, cambia el nombre de `app_web` a `docs` y activa Pages en *Settings → Pages* (rama `main`, carpeta `/docs`).
+Prueba la app: https://reconocimiento-facial-companeros-vsxk.netlify.app
 
 ---
-
-## Cómo correr la libreta (Google Colab)
-
-1. Sube a una carpeta de tu Google Drive `facenet_recuperado.keras` y la carpeta `base_de_datos_imagenes`. En lugar de la carpeta también sirve `Fotos_para_FaceRecognition.zip`.
-2. Abre `notebook/Reconocimiento_Facial_Companeros.ipynb` en Colab y elige **Entorno de ejecución → Ejecutar todas**.
-3. La primera celda monta Drive y **busca sola** la carpeta donde está el modelo. No hay que escribir rutas.
-4. Al final se guardan `base_de_datos.json` y `facenet.keras` en `salida_reconocimiento/`.
 
 ## Cómo correrlo en el clúster Yucca
 
