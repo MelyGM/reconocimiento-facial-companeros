@@ -1,0 +1,25 @@
+# Reconocimiento facial de compañeros con FaceNet
+# Versiones con las que se probó el proyecto completo (Python 3.10 a 3.13).
+#
+# Instalar:  pip install -r requirements.txt
+#
+# Nota GPU AMD (clúster con ROCm 6.4): en lugar de "tensorflow" instala
+#   pip install tensorflow-rocm==2.18.1 -f https://repo.radeon.com/rocm/manylinux/rocm-rel-6.4.3/
+# y después: pip install -r requirements.txt --no-deps
+
+# Modelo FaceNet y cálculo
+tensorflow==2.21.0
+keras==3.15.1
+h5py==3.14.0                     # TensorFlow 2.21 pide h5py < 3.15
+numpy==2.5.3
+
+# Imágenes y detección de rostros
+pillow==12.3.0
+opencv-python==4.14.0.94         # versión 4: incluye el detector Haar (la 5 ya no lo trae)
+
+# Gráficas
+matplotlib==3.11.2
+
+# Para abrir la libreta fuera de Colab
+notebook>=7
+ipykernel>=6

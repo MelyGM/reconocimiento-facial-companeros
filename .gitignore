@@ -1,0 +1,35 @@
+# Fotos de los compañeros: NO se suben al repositorio (se entregan aparte).
+# De la carpeta solo se suben la lista de etiquetas y su nota.
+base_de_datos_imagenes/*
+!base_de_datos_imagenes/etiquetas.csv
+!base_de_datos_imagenes/LEEME.md
+Fotos_para_FaceRecognition*/
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.webp
+*.bmp
+
+# Modelos grandes (no se suben; el de la app sí va en app_web/modelo/)
+*.keras
+*.h5
+keras-facenet-h5/
+
+# Resultados que genera la libreta (pueden incluir fotos)
+salida_reconocimiento/
+fotos_simuladas/
+fotos_companeros/
+fotos_nuevas/
+
+# Python / Jupyter / entornos
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+entorno_face/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
